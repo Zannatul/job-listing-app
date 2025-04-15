@@ -8,6 +8,7 @@ This is a simple job listing application using Laravel (backend) and Vue.js (fro
 - 15 jobs are created with seeder.
 - Some job applications are created with seeder
 - Email notification are implemented with laravel job and queue.
+- API response with laravel resource.
 
 
 ## Table of Contents
@@ -77,7 +78,7 @@ This is a simple job listing application using Laravel (backend) and Vue.js (fro
     php artisan queue:work
 
 ## Testing
-- No text cases are written.
+- Test case for job list are written. Test case are using mockery.
 
 ## improvement
 
