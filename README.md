@@ -28,6 +28,8 @@ This is a simple job listing application using Laravel (backend) and Vue.js (fro
 - **Job details:** User can see job details.
 - **Apply Jobs:** Users can apply job by name and email.
 - **Total view and total applicants:** User can see how much jobpost viwed and how much applicant applied.
+- **Email notification ** Email notification are implemented with laravel job and queue.
+- ** Test case ** Test case for job list are written. Test case are using mockery.
 
 ## Technologies Used
 
@@ -78,7 +80,8 @@ This is a simple job listing application using Laravel (backend) and Vue.js (fro
     php artisan queue:work
 
 ## Testing
-- Test case for job list are written. Test case are using mockery.
+- ```bash
+    php artisan test
 
 ## improvement
 
