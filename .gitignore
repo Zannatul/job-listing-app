@@ -1,0 +1,26 @@
+# Node dependencies
+/frontend/node_modules
+/frontend/dist
+/frontend/.vite
+
+# Laravel dependencies
+/backend/vendor
+/backend/.env
+/backend/.phpunit.result.cache
+/backend/storage/*.key
+/backend/storage/app/public
+/backend/storage/framework/cache/*
+/backend/storage/framework/sessions/*
+/backend/storage/framework/views/*
+/backend/storage/logs/*
+/backend/.idea
+/backend/.vscode
+
+# Docker volumes & logs
+docker/mysql/data
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
