@@ -10,6 +10,9 @@ export const getJob = async (id) => {
   return await axios.get(`${API}/jobs/${id}`)
 }
 
-export const applyToJob = async (id, payload) => {
-  return await axios.post(`${API}/jobs/${id}/apply`, payload)
+export const applyToJob = async (id, name, email) => {
+  return await axios.post(`${API}/jobs/${id}/apply`, {
+    name,
+    email
+  })
 }

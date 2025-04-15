@@ -58,7 +58,7 @@
 <script setup>
 import { onMounted, ref } from 'vue'
 import { useRoute } from 'vue-router'
-import { getJob } from '@/services/jobService'
+import { getJob, applyToJob } from '@/services/jobService'
 import axios from 'axios'
 
 const route = useRoute()
@@ -88,10 +88,7 @@ const applyForJob = async () => {
   applyError.value = ''
 
   try {
-    const response = await axios.post(`http://localhost:8010/api/jobs/${route.params.id}/apply`, {
-      name: name.value,
-      email: email.value
-    })
+    const response = await applyToJob(route.params.id, name.value, email.value)
 
     successMessage.value = response.data.message
     job.value.applications++
