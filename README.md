@@ -1,4 +1,4 @@
-# Vaccine Scheduling System
+# Job Listing App
 
 This is a simple job listing application using Laravel (backend) and Vue.js (frontend). The main use case is that a company can post jobs with minimal data (such as title and description), and candidates can view and apply.
 
